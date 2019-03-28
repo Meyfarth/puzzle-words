@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  h1 TODO
+  p 
+    each td in todos
+      span #{td.id} - #{td.title}
+      br
+      em #{td.description}
+    end
+  
